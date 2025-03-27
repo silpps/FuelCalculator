@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="405.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="HelloController">
+   <children>
+      <VBox layoutX="124.0" layoutY="33.0" prefHeight="324.0" prefWidth="351.0">
+         <children>
+            <Label id="lblName" fx:id="lblName" alignment="CENTER" contentDisplay="CENTER" prefHeight="38.0" prefWidth="351.0" />
+            <Label id="lblDistance" fx:id="lblDistance" alignment="CENTER" prefHeight="25.0" prefWidth="351.0" />
+            <TextField fx:id="txtDistance" prefHeight="25.0" prefWidth="269.0" />
+            <Label id="lblFuel" fx:id="lblFuel" alignment="CENTER" prefHeight="24.0" prefWidth="351.0" />
+            <TextField fx:id="txtFuel" />
+            <Label id="lblResult" fx:id="lblResult" alignment="CENTER" contentDisplay="CENTER" prefHeight="28.0" prefWidth="351.0" />
+            <Button id="btnCalculate" fx:id="btnCalculate" mnemonicParsing="false" onAction="#onCalculateClick">
+               <VBox.margin>
+                  <Insets left="160.0" />
+               </VBox.margin>
+            </Button>
+            <Label id="lblError" fx:id="lblError" alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="380.0" />
+            <Button id="btnEn" fx:id="btnEn" mnemonicParsing="false" onAction="#onEnClick" text="English">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button id="btnFr" fx:id="btnFr" mnemonicParsing="false" onAction="#onFrClick" text="français">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button id="btnJp" fx:id="btnJp" mnemonicParsing="false" onAction="#onJpClick" text="日本語">
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button id="btnIr" fx:id="btnIr" mnemonicParsing="false" onAction="#onIrClick" text="فارسی" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
