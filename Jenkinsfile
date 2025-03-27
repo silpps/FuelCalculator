@@ -3,14 +3,14 @@ pipeline {
 
     environment {
         DOCKERHUB_CREDENTIALS_ID = 'dockerhub-credentials'
-        DOCKERHUB_REPO = 'hildd/devopschain'
+        DOCKERHUB_REPO = 'hildd/fuelcalculator'
         DOCKER_IMAGE_TAG = 'ver1'
     }
 
     stages {
         stage('Checkout') {
             steps {
-                git 'https://github.com/silpps/TripCostCalculator.git'
+                git 'https://github.com/silpps/FuelCalculator.git'
             }
         }
         stage('Run Tests') {

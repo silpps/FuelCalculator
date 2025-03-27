@@ -33,7 +33,7 @@
         </dependency>
     </dependencies>
     <build>
-        <finalName>CostCalculator</finalName>
+        <finalName>FuelCalculator</finalName>
         <plugins>
             <!-- Compiler Plugin for setting the Java version -->
             <plugin>
@@ -54,7 +54,7 @@
                 <configuration>
                     <archive>
                         <manifest>
-                            <mainClass>CostCalculator</mainClass> <!-- Correct main class -->
+                            <mainClass>Main</mainClass> <!-- Correct main class -->
                         </manifest>
                     </archive>
                 </configuration>
